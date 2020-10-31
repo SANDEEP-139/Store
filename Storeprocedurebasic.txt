@@ -1,0 +1,11 @@
+DELIMITER //
+CREATE PROCEDURE selectdata
+(
+IN stdid VARCHAR(50),
+IN suname VARCHAR(50) 
+)
+BEGIN
+ SELECT * from students where id=stdid
+
+END//
+DELIMITER 
